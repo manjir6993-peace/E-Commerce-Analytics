@@ -63,3 +63,26 @@ GROUP BY order_year
 ORDER BY order_year;
 
 
+-- ========================================================
+-- Q4: Average Order Value (AOV) by Year
+-- ========================================================
+
+WITH cte AS
+(
+    SELECT
+        YEAR(STR_TO_DATE(o.order_purchase_timestamp, '%m/%d/%Y %H:%i')) AS order_year,
+        COUNT(DISTINCT o.order_id) AS order_count,
+        SUM(ord.price) AS total_sales
+    FROM orders o
+    JOIN order_items ord
+        ON o.order_id = ord.order_id
+    GROUP BY order_year
+)
+
+SELECT
+    order_year,
+    order_count,
+    total_sales,
+    total_sales / order_count AS avg_order_value
+FROM cte
+ORDER BY order_year;

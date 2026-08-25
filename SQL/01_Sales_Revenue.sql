@@ -21,3 +21,29 @@ Main Tables:
 - order_items
 ========================================================
 
+
+
+
+  
+-- ========================================================
+-- Q1: Order Volume by Order Status
+-- ========================================================
+
+SELECT
+    order_status,
+    COUNT(DISTINCT order_id) AS order_count
+FROM orders
+GROUP BY order_status
+ORDER BY order_count DESC;
+
+
+-- ========================================================
+-- Q2: Number of Orders by Year
+-- ========================================================
+
+SELECT
+    YEAR(STR_TO_DATE(order_purchase_timestamp, '%m/%d/%Y %H:%i')) AS order_year,
+    COUNT(DISTINCT order_id) AS order_count
+FROM orders
+GROUP BY order_year
+ORDER BY order_year;

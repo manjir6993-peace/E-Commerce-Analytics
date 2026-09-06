@@ -148,3 +148,13 @@ E-Commerce-Analytics/
 │   └── 08_Delivery_Logistics.sql
 │
 └── README.md
+
+
+## Project Outcome
+
+- Analyzed 99K+ e-commerce orders using SQL and Power BI.
+- Identified key revenue, customer retention, product, payment, and delivery trends.
+- Found that only 3.12% of customers were repeat customers, highlighting a major retention opportunity.
+- Identified 7.87% late deliveries with an average delay of 8.87 days.
+- Built a 4-page Power BI dashboard covering Executive Overview, Customer Performance, Operations & Payments, and Business Insights.
+- Translated analysis findings into actionable business recommendations.

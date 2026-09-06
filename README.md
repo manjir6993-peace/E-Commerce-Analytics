@@ -158,3 +158,18 @@ E-Commerce-Analytics/
 - Identified 7.87% late deliveries with an average delay of 8.87 days.
 - Built a 4-page Power BI dashboard covering Executive Overview, Customer Performance, Operations & Payments, and Business Insights.
 - Translated analysis findings into actionable business recommendations.
+
+
+## Power BI Dashboard
+
+### Executive Overview
+[View Dashboard](Screenshots/Executive_Overview.jpg)
+
+### Customer Performance
+[View Dashboard](Screenshots/Customer_Performance.jpg)
+
+### Operations & Payments
+[View Dashboard](Screenshots/Operations_and_Payments.jpg)
+
+### Business Insights
+[View Dashboard](Screenshots/Business_Insights.jpg)

@@ -146,7 +146,6 @@ E-Commerce-Analytics/
 │   ├── 06_Customer_Satisfaction.sql
 │   ├── 07_Payments.sql
 │   └── 08_Delivery_Logistics.sql
-```text
 └── README.md
 
 
